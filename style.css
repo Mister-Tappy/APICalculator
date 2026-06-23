@@ -1,0 +1,59 @@
+body { 
+    font-family: sans-serif; 
+    background: hsl(177, 100%, 50%);
+    background: radial-gradient(circle, hsl(177, 100%, 50%) 0%, rgb(102, 91, 255) 100%);
+    display: flex; 
+    justify-content: center; 
+}
+
+.card { 
+    background: white; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    width: 350px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    padding: 8px; 
+    width: 100%;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+form {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+button {
+    margin-top: 15px;
+    padding: 5px 10px; 
+    background: #1877f2; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+h3 { 
+    color: #1877f2; 
+    margin-top: 0; 
+}
+
+.public-box { 
+    margin-top: 15px; 
+    padding: 10px; 
+    background: #e4e6eb; 
+    border-radius: 5px; 
+    font-size: 13px; 
+}
+
+#summit {
+    font-size: 20px;
+}

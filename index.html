@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculator</h1>
-    <form>
-        <input type="text" id="num1" placeholder="Enter first number">
-        <select id="operator">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-        </select>
-        <input type="text" id="num2" placeholder="Enter second number">
-    </form>
+    <div class="card">
+        <h1>Calculator</h1>
+        <form>
+            <input class="input" type="text" id="num1" placeholder="Enter first number">
+            <select class="input" id="operator">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <input class="input" type="text" id="num2" placeholder="Enter second number">
+        </form>
     <button onclick="send()" >Click Me</button>
-    <h1 id="summit"></h1>
+    <h1 id="summit"></h1> 
+    </div>
     <script src="index2.js"></script>
 </body>
 </html>
