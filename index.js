@@ -32,6 +32,11 @@ app.get('/', (req, res) => {
         return res.json({ error: "กรุณากรอกข้อมูลให้ครบถ้วน" });
     }
 
+    const allowedOps = ['+', '-', '*', '/'];
+        if (!allowedOps.includes(op)) {
+        return res.json({ error: "เครื่องหมายไม่ถูกต้อง" });
+    }
+
     if (isNaN(Number(a)) || isNaN(Number(b))) {
         return res.json({ error: "เฉพาะตัวเลขเท่านั้น" });
     }
