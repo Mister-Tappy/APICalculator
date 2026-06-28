@@ -22,7 +22,8 @@ function send() {
             if (data.error) {
                 summit.innerHTML = "Error : " + data.error;
             } else {
-                summit.innerHTML = "Result: " + data.message;
+                let cleanResult = Number(Number(data.message).toFixed(10))
+                summit.innerHTML = "Result: " + cleanResult;
             }
             console.log(data);
         })
