@@ -3,7 +3,16 @@ function send() {
     let num2 = document.getElementById("num2").value;
     let operator = document.getElementById("operator").value;
 
-    fetch(`http://localhost:3001/?a=${num1}&b=${num2}&op=${encodeURIComponent(operator)}`)
+    let api = "add";
+    if (operator === "-") {
+        api = "subtract";
+    } else if (operator === "*") {
+        api = "multiply";
+    } else if (operator === "/") {
+        api = "divide";
+    }
+
+    fetch(`http://localhost:3001/${api}?a=${num1}&b=${num2}`)
         .then((res) => {
             return res.json();
         })
